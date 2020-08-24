@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+}
+.container h3{
+    color: blue;
+    text-align: center;
+}
+.container table{
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+.container sub{
+    font-size: 15px;
+}
+.container tr:nth-child(n+3) td{
+    border: 2px solid gainsboro;
+    font-size: 24px;
+}
+.container tr:nth-child(1){
+    background-color: orange;
+    color: white;
+}
+/* thứ 7*/
+.container tr:nth-child(n+2) td:nth-child(7){
+    color: blue;
+}
+.container tr:nth-child(n+2) td:nth-child(7) sub{
+    color: black;
+}
+.container tr:nth-child(1) th:nth-child(7){
+    background-color: blue;
+}
+/* chủ nhật*/
+.container tr:nth-child(1) th:nth-child(1) {
+    background-color: red;
+}
+.container tr:nth-child(n+2) td:nth-child(1) sub{
+    color: black;
+}
+.container tr:nth-child(n+2) td:nth-child(1){
+    color: red;
+}
+.hang1 th{
+    border: 1px solid white;
+}

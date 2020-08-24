@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="baitap.css">
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>BMI</th>
+                <th>Interpretation</th>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td>BMI < 18.5</td>
+                <td>Underweight</td>
+            </tr>
+            <tr>
+                <td>18.5 < BMI < 25.0</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>25.0 < BMI < 30.0</td>
+                <td>Overweight</td>
+            </tr>
+            <tr>
+                <td>30.0 < BMI</td>
+                <td>Obese</td>
+            </tr>
+        </table>
+        <p>Nhập khối lượng cân nặng</p>
+        <input id="weight" type="number">
+        <p>Nhập chiều cao</p>
+        <input id="height" type="number">
+        <button onclick="result()">BMI</button>
+        <p id="demo"></p>
+    </div>
+<script src="baitap.js"></script>
+</body>
+</html>

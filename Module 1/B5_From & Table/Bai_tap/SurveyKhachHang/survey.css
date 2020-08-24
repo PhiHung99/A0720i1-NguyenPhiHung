@@ -1,0 +1,10 @@
+.statements{
+    border-collapse: collapse;
+}
+.statements{
+    border: 1px solid gainsboro;
+}
+.statementsI{
+   background-color: rgba(0,0,0,0.2);
+    width: 300px;
+}

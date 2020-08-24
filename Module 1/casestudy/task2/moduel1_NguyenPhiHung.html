@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Quản Lý Khu nghỉ dưỡng Furama</title>
+    <link rel="stylesheet" href="moduel1_NguyenPhiHung.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.14.0/css/all.min.css">
+</head>
+<body>
+<div class="container" id="sticky">
+    <!--        Logo-->
+    <div class="logo">
+        <a href="moduel1_NguyenPhiHung.html"><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/1FEF0701A25140C9A5DB213DFDCF0477/deal_1.jpg" alt="Reort FURAMA"></a>
+        <pre>
+                <i class="fas fa-map-marker-alt"></i>
+                103 – 105 Đường Võ Nguyên Giáp,
+
+                Phường Khuê Mỹ, Quận Ngũ hành Sơn, Tp. Đà Nẵng, Việt Nam
+
+                7.0 km từ Sân bay Quốc tế Đà Nẵng
+            </pre>
+        <p><br>
+            <i class="fas fa-phone"></i>
+            84-236-3847 333/888
+        </p><br><br>
+        <p>
+            <i class="fas fa-envelope"></i>
+            reservation@furamavietnam.com
+        </p>
+    </div>
+    <!--        Navbar-->
+    <div class="navbar" id="header-navbar">
+        <ul>
+            <li><a href="https://furamavietnam.com/vi/the-resort/">Giới Thiệu</a></li>
+            <li><a href="https://furamavietnam.com/vi/our-rooms/">Loại Phòng</a></li>
+            <li><a href="https://furamavietnam.com/vi/culinary/">Ẩm Thực</a></li>
+            <li><a href="https://furamavietnam.com/vi/meeting-and-events/">Hội Nghị Và Sự Kiện</a></li>
+            <li><a href="https://furamavietnam.com/vi/spa-and-fitness/">Spa</a></li>
+            <li><a href="https://furamavietnam.com/vi/recreation/">Giải Trí </a></li>
+            <li><a href="https://furamavietnam.com/vi/destination/">Điểm Đến</a></li>
+            <li><a href="https://furamavietnam.com/vi/furama-special-offers/">Ưu Đãi</a></li>
+            <li><a href="https://furamavietnam.com/vi/evoucher/">Evoucher</a></li>
+        </ul>
+    </div>
+    <!--        Img background-->
+    <div class="imgback">
+        <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/378/37836676.jpg" alt="Furama">
+        <img src="https://furamavietnam.com/wp-content/uploads/2020/03/VJ-FU-01-element-vi.png">
+    </div>
+<!--    Form nhập thông tin-->
+    <div  class="content">
+        <form action="moduel1_NguyenPhiHung.html" method="get" id="formInfo">
+            <table>
+                <tr><h1>THÔNG TIN CÁ NHÂN</h1></tr>
+                <hr style="width: 425px">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td>ID card number:</td>
+                    <td><input type="text" id="card"></td>
+                </tr>
+                <tr>
+                    <td>Date of birth:</td>
+                    <td><input type="date" id="date" style="width: 173px"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" id="address"></td>
+                </tr>
+                <tr>
+                    <td>Customer:</td>
+                    <td>
+                        <select style="width: 173px" id="customer">
+                            <option value="Diamond">Diamond</option>
+                            <option value="Platinum">Platinum</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Menber">Menber</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Discount:</td>
+                    <td><input type="number" id="discount"></td>
+                </tr>
+                <tr>
+                    <td>Quantity comes:</td>
+                    <td><input type="text" id="quantity"></td>
+                </tr>
+                <tr>
+                    <td>Number of rental days:</td>
+                    <td><input type="number" id="day"></td>
+                </tr>
+                <tr>
+                    <td>Type of service:</td>
+                    <td>
+                        <select style="width: 173px" id="service">
+                            <option value="Villa">Villa</option>
+                            <option value="House">House</option>
+                            <option value="Room">Room</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Type of room for rent:</td>
+                    <td>
+                        <select style="width: 173px" id="room">
+                            <option value="Vip">Vip</option>
+                            <option value="Business">Business</option>
+                            <option value="Normal">Normal</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <input type="button" value="Regis" onclick="tinhTien()" style="margin-left: 10px; width: 400px">
+        </form>
+        <hr style="width: 425px">
+        <p id="tong" style="margin-left: 10%"></p>
+        <table class="price">
+            <tr><th>Price list</th></tr>
+            <tr><td>Villa 500$/1Days</td></tr>
+            <tr><td>House 300$/1Days</td></tr>
+            <tr><td>Room 100$/1Days</td></tr>
+        </table>
+    </div>
+    <div id="out" class="outdata"></div>
+    <div id="disc" class="outdata2"></div>
+</div>
+<script src="moduel1_NguyenPhiHung.js"></script>
+</body>
+</html>

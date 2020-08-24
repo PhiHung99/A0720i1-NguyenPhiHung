@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    width: 700px;
+    height: 920px;
+    border: 1px solid black;
+    margin: auto;
+}
+.cvleft{
+    background: aqua;
+    width: 300px;
+    /*border: 1px solid black;*/
+    height: 100%;
+    padding-left: 20px;
+    float: left;
+    line-height: 35px;
+}
+.cvleft img{
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+}
+.cvright {
+    width: 360px;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    line-height: 75px;
+}
+.noibat{
+    font-size: 20px;
+    font-weight: bold;
+}
+.nor{
+    display: block;
+    font-weight: normal;
+    font-size: normal;
+    list-style-type: none;
+}
+.tong{
+    list-style-type: none;
+}

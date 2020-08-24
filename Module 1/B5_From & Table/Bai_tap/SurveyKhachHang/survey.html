@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Khách Hàng</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div>
+        <h3>Market Research Survey</h3>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <hr>
+        <form>
+            <label><h4>What is your age range?</h4></label>
+            <select style="height: 25px; width: 600px">
+                <option label="18-24">18-24</option>
+                <option label="25-34">25-34</option>
+                <option label="35-50">35-50</option>
+                <option label="50+">50+</option>
+            </select>
+            <label><h4>What is your yearly income range?</h4></label>
+            <select style="height: 25px; width: 600px">
+                <option label="$0-$25,000">0-$25,000</option>
+                <option label="$25,001-$50,000">25,001-$50,000</option>
+                <option label="$50,001-$100,000">50,001-$100,000</option>
+                <option label="$100,000+">100,000+</option>
+            </select>
+            <h4>Gender Identity</h4>
+            <table>
+                <tr><td>
+                    <input type="radio" value="Male" id="Male" name="gander">
+                    <label for="Male">Male</label>
+                </td></tr>
+                <tr><td>
+                    <input type="radio" value="Female" id="Female" name="gander">
+                    <label for="Female">Female</label>
+                </td></tr>
+                <tr><td>
+                    <input type="radio" value="Nonbinary" id="Nonbinary" name="gander">
+                    <label for="Nonbinary">Nonbinary</label>
+                </td></tr>
+                <tr><td>
+                    <input type="radio" value="Other" id="Other" name="gander">
+                    <label for="Other">Other</label>
+                </td></tr>
+                <tr>
+                    <td>
+                        <input type="text"> ? canh lề
+                    </td>
+                </tr>
+            </table>
+            <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+            <table>
+                <tr><td><input type="checkbox" value="Product1">Product1</td></tr>
+                <tr><td><input type="checkbox" value="Product2">Product2</td></tr>
+                <tr><td><input type="checkbox" value="Product3">Product3</td></tr>
+            </table>
+            <h4>How often would you use our new product?</h4>
+            <table>
+                <tr><td>
+                    <input type="radio" value="Daily" id="Daily" name="gender">
+                    <label for="Daily">Daily</label>
+                </td></tr>
+                <tr><td>
+                    <input type="radio" value="Daily" id="Weekly" name="gender">
+                    <label for="Weekly">Weekly</label>
+                </td></tr>
+                <tr><td>
+                    <input type="radio" value="Daily" id="Monthly" name="gender">
+                    <label for="Monthly">Monthly</label>
+                </td></tr>
+            </table>
+            <h4>What would you pay for the new product?</h4>
+            <tr>
+                <td>$</td>
+                <td><input type="text" style="width: 60px"> . <input type="text" style="width: 30px; height: 15px "></td>
+            </tr>
+<!--            Chọn ô tròn chỉ tích được 1 -->
+<!--            <input type="radio" id="male" name="gender" value="male">-->
+<!--            <label for="male">Male</label><br>-->
+<!--            <input type="radio" id="female" name="gender" value="female">-->
+<!--            <label for="female">Female</label><br>-->
+<!--            <input type="radio" id="other" name="gender" value="other">-->
+<!--            <label for="other">Other</label>-->
+            <h4>What features would you like to see in the new product</h4>
+            <input type="text" style="width: 500px; height: 200px">
+            <p>Please rate your level of argreement with the following statements</p>
+            <table class="statements">
+                <tr>
+                    <td class="statementsI"></td>
+                    <th>Strongly Disagree</th>
+                    <th>Disagree</th>
+                    <th>Agree</th>
+                    <th>Strongly Agree</th>
+                </tr>
+                <tr>
+                    <th>Our products are priced fairly</th>
+                    <td><input type="radio" name="price" value="Strongly Disargee"></td>
+                    <td><input type="radio" name="price" value="Disargee"></td>
+                    <td><input type="radio" name="price" value="Argee"></td>
+                    <td><input type="radio" name="price" value="Strongly Argee"></td>
+                </tr>
+                <tr>
+                    <th>Our products are high quality</th>
+                    <td><input type="radio" name="quality" value="Strongly Disargee"></td>
+                    <td><input type="radio" name="quality" value="Disargee"></td>
+                    <td><input type="radio" name="quality" value="Argee"></td>
+                    <td><input type="radio" name="quality" value="Strongly Argee"></td>
+                </tr>
+                <tr>
+                    <th>You would recommend our product to a friend or coworker</th>
+                    <td><input type="radio" name="sharefriend" value="Strongly Disargee"></td>
+                    <td><input type="radio" name="sharefriend" value="Disargee"></td>
+                    <td><input type="radio" name="sharefriend" value="Argee"></td>
+                    <td><input type="radio" name="sharefriend" value="Strongly Argee"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

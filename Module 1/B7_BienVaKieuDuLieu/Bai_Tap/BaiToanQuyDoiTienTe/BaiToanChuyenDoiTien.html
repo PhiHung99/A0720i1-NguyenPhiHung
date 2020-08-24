@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Toán Chuyển Đổi Tiền</title>
+    <link rel="stylesheet" href="BaiToanChuyenDoiTien.css">
+</head>
+<body>
+    <div class="container">
+        <form action="BaiToanChuyenDoiTien.html" method="get">
+            <div class="amount">
+                <h3>Amount</h3>
+                <input type="text" id="amount">
+            </div>
+            <div class="form">
+                <h3>From Currency</h3>
+                <select id="formCurrency">
+                    <option value="VND">Việt Nam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+            <div class="to">
+                <h3>To Currency</h3>
+                <select id="toCurrency">
+                    <option value="USD">USD</option>
+                    <option value="VND">Việt Nam</option>
+                </select>
+            </div>
+            <div class="convert">
+               <input type="button" value="Convert" onclick="convertMoney()">
+            </div>
+        </form>
+        <h4 id="doitien" style="display: block; margin-right: 500px"></h4>
+    </div>
+<script src="BaiToanChuyenDoiTien.js"></script>
+</body>
+</html>

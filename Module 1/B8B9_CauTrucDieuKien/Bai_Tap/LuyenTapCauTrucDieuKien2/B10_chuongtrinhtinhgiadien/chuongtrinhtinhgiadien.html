@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="chuongtrinhtinhgiadien.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bảng báo giá điện sinh hoạt</h2>
+        <table>
+            <tr>
+                <th>Nhóm đối tượng khách hàng</th>
+                <th>Giá bán điện<br>(Đồng/kWh)</th>
+            </tr>
+            <tr>
+                <td>Giá bán lẻ điện sinh hoạt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Bậc 1: Cho kWh từ 0 - 50</td>
+                <td id="num1">1.678</td>
+            </tr>
+            <tr>
+                <td>Bậc 2: Cho kWh từ 51 - 100</td>
+                <td id="num2">1.734</td>
+            </tr>
+            <tr>
+                <td>Bậc 3: Cho kWh từ 101 - 200</td>
+                <td id="num3">2.014</td>
+            </tr>
+            <tr>
+                <td>Bậc 4: Cho kWh từ 201 - 300</td>
+                <td id="num4">2.536</td>
+            </tr>
+            <tr>
+                <td>Bậc 5: Cho kWh từ 301 - 400</td>
+                <td id="num5">2.834</td>
+            </tr>
+            <tr>
+                <td>Bậc 6: Cho kWh từ 401 trở lên</td>
+                <td id="num6">2.927</td>
+            </tr>
+        </table>
+        <div class="content">
+        <p>Số điện tiêu thụ tháng này là: <input type="number" id="num"></p>
+        <button onclick="result()">Tiền điện tiêu thụ</button>
+        <p id="result"></p>
+        </div>
+    </div>
+<script src="chuongtrinhtinhgiadien.js"></script>
+</body>
+</html>

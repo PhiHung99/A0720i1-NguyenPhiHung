@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#mtp{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100px;
+}

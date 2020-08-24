@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi độ C sang độ F</title>
+    <link rel="stylesheet" href="DoCsangF.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h3>Amount</h3>
+            <input type="text" id="amount">
+        </div>
+        <div class="content1">
+            <h3>From Degree</h3>
+            <select id="from">
+                <option value="C">Độ C</option>
+                <option value="F">Độ F</option>
+            </select>
+        </div>
+        <div class="content2">
+            <h3>To Degree</h3>
+            <select id="to">
+                <option value="F">Độ F</option>
+                <option value="C">Độ C</option>
+            </select>
+        </div>
+        <div class="content3">
+            <button onclick="chuyendoi()">Result</button>
+        </div>
+    </div>
+    <span id="quydoi"></span>
+
+<script src="DoCsangF.js"></script>
+</body>
+</html>

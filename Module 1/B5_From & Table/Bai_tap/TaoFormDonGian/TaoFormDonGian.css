@@ -1,0 +1,30 @@
+/*.container{*/
+/*    width: 400px;*/
+/*    height: 200px;*/
+/*    background-color: navajowhite ;*/
+/*}*/
+/*.container h1{*/
+/*    text-align: center;*/
+/*    background-color: chartreuse;*/
+/*}*/
+/*.email{*/
+/*    margin-left: 23px;*/
+/*}*/
+/*.ilike{*/
+/*    margin-left: 10px;*/
+/*}*/
+/*.canhle{*/
+/*    margin-left: 72px;*/
+/*}*/
+.container{
+    border: 1px solid black;
+    padding: 5px;
+    width: 600px;*
+    height: 200px;
+    /*background-color: navajowhite ;*/
+}
+.container h1{
+    text-align: center;
+    background-color: navajowhite;
+    margin:5px 10px 0 10px;
+}
