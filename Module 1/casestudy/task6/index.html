@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<script>
+    let regexEmail =/\S+@\S+\.\S+/;
+    let regexBirthday = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/;
+    let regexCmnd = /^-?\d+\.?\d*$/;
+    let lissCustomer = [];
+    function displayMainMenu() {
+        let choose = parseInt(prompt("1.Add new customer."+"\n2.Display Information Customer"+"\n3.Display total pays Customer"+"\n4.Edit Information Customer"+"\n5.Delete Customer"+"\n6.Exit"));
+        switch (choose) {
+            case 1:{
+                addNewCustomer();
+                break;
+            }case 2:{
+                displayCustomer();
+                break;
+            }case 3:{
+                displayTotal();
+            }case 4:{
+                editCustomer();
+                break;
+            }case 5:{
+                deleteCustomer();
+                break;
+            }case 6:{
+                break;
+            }
+            default: {
+                alert("Faild")
+            }
+        }
+    }
+    //thêm 1 khách hàng
+    function addNewCustomer() {
+        let check = false;
+        let cus = new Customer();
+        let name = prompt("Input Name");
+        do {
+            let cmnd = prompt("Input Card");
+            if (regexCmnd.test(cmnd)){
+                check = true;
+            }else {
+                alert("cmnd không hợp lệ, nhập lại");
+            }
+        } while (!check);
+        //
+        do {
+            let date = prompt("Input birthday");
+            if (regexBirthday.test(date)){
+                check = true;
+            }else {
+                alert("ngày tháng năm sinh không hợp lệ, nhập lại");
+            }
+        } while (!check);
+        //
+        do {
+            let email = prompt("Input Email");
+            if (regexEmail.test(email)){
+                check = true;
+            }else {
+                alert("email không hợp lệ, nhập lại");
+            }
+        } while (!check);
+        let address = prompt("Input Address");
+        let customer = prompt("Input Customer");
+        let discount = prompt("Input Discord");
+        let quantity = prompt("Input Quantity Included");
+        let day = prompt("Input renday")
+        let service = prompt("Input service");
+        let room = prompt("Input room");
+        cus.setName(name);
+        cus.setCmnd(cmnd);
+        cus.setBirthday(date);
+        cus.setEmail(email);
+        cus.setAddress(address);
+        cus.setTypeCustomer(customer);
+        cus.setDiscount(discount);
+        cus.setQuantityIncluded(quantity);
+        cus.setRentdays(day);
+        cus.setTypeService(service);
+        cus.setTypeRoom(room);
+        lissCustomer.push(cus);
+        alert("Bạn đã thêm thành công");
+        displayMainMenu();
+        console.log(lissCustomer);
+    }
+    //
+    function displayCustomer() {
+        let temp = " ";
+        for (let i = 0; i < arrListCustomer.length; i++) {
+            temp += i + ". Name: " + arrListCustomer[i][0] + "\n";
+        }
+        let chooseDisplay = parseInt(prompt("Bấm phím 0 để xem toàn bộ thông tin vừa nhập: " + temp));
+        alert("1.Name: " + arrListCustomer[chooseDisplay][0] + "\n" +
+            "2.ID card number: " + arrListCustomer[chooseDisplay][1] + "\n" +
+            "3.Date of birth: " + arrListCustomer[chooseDisplay][2] + "\n" +
+            "4.Email: " + arrListCustomer[chooseDisplay][3] + "\n" +
+            "5.Address: " + arrListCustomer[chooseDisplay][4] + "\n" +
+            "6.Customer: " + arrListCustomer[chooseDisplay][5] + "\n" +
+            "7.Discount: " + arrListCustomer[chooseDisplay][6] + "\n" +
+            "8.Quantity comes: " + arrListCustomer[chooseDisplay][7] + "\n" +
+            "9.Number of rental days: " + arrListCustomer[chooseDisplay][8] + "\n" +
+            "10.Type of service: " + arrListCustomer[chooseDisplay][9] + "\n" +
+            "11.Type of room for rent: " + arrListCustomer[chooseDisplay][10] + "\n");
+        displayMainMenu();
+    }
+    function displayTotal() {
+        let cus = new Customer();
+        alert(cus.totalPays());
+        displayMainMenu();
+    }
+    displayMainMenu();
+</script>
+</body>
+</html>

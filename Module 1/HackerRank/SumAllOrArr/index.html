@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng các phần tử trong mảng</title>
+</head>
+<body>
+<script>
+    function sumArr(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++){
+            sum = sum + arr[i];
+        }
+        return sum;
+    }
+    let n = parseInt(prompt("Nhập vào kích thước mảng:"));
+    let arr = [];
+    if (isNaN(n) || n < 0){
+        alert("Kiểm tra kích thước bạn nhập vào có đúng không !!");
+    } else {
+        let check = true;
+        for (let i = 0; i < n; i++){
+            arr.push(parseInt(prompt("Nhập vào phần tử thứ " + (i+1))));
+            if (arr[i] >= 1000){
+                alert("Số phải nhỏ hơn 1000, Nhập lại");
+                check = false;
+                break;
+            }
+        }
+        if (!check){
+            alert("Kiểm tra nhập lại cho đúng nhé");
+        }else alert(sumArr(arr));
+    }
+</script>
+</body>
+</html>

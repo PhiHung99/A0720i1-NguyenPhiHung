@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1400px" height="700px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    window.onload = function () {
+        let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+        let img = new Image();
+        img.src = "up.png";
+        img.onload = function () {
+            ctx.drawImage(img, 700, 350);
+        }
+    }
+    class myCar{
+        constructor(move,speed,obstacles,reward) {
+            this.move = move;
+            this.speed = speed;
+            this.obstacles = obstacles;
+            this.reward = reward;
+        }
+    }
+</script>
+</body>
+</html>

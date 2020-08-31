@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staircase</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập vào số bật thang: "));
+    for (let i = 1; i <= n; i++) {
+        document.writeln("#".repeat(i).padStart(n));
+        document.writeln("<br>");
+        // console.log("#".repeat(i).padEnd(n));
+        console.log("#".repeat(i).padStart(n));
+    }
+</script>
+</body>
+</html>
