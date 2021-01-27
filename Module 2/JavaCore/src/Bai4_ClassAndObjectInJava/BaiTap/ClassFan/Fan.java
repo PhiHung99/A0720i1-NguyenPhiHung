@@ -51,7 +51,7 @@ public class Fan {
 //        this.setSpeed(Slow);
 //        this.setOn(false);
 //        this.setRadius(5);
-//        this.setColor("blue");
+//        this.setColor("blue0");
 //    }
 
     // van dung duoc //

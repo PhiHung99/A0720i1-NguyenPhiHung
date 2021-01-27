@@ -1,4 +1,4 @@
-package Bai6_Inheritance.Baitap.PointAndMoveablePoint;
+package Bai6_Inheritance.BaiTap.PointAndMoveablePoint;
 
 public class Point {
     private float x;

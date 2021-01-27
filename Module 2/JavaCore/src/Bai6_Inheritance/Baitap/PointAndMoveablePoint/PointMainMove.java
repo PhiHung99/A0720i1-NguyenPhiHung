@@ -1,4 +1,4 @@
-package Bai6_Inheritance.Baitap.PointAndMoveablePoint;
+package Bai6_Inheritance.BaiTap.PointAndMoveablePoint;
 
 public class PointMainMove {
     public static void main(String[] args) {
@@ -7,5 +7,6 @@ public class PointMainMove {
         MoveablePoint point1 = new MoveablePoint(2,4,6,8);
         System.out.println(point1);
         System.out.println(point1.move(5,6));
+        System.out.println();
     }
 }

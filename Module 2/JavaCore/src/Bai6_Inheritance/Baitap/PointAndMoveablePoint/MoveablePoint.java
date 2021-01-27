@@ -1,4 +1,6 @@
-package Bai6_Inheritance.Baitap.PointAndMoveablePoint;
+package Bai6_Inheritance.BaiTap.PointAndMoveablePoint;
+
+import java.util.Arrays;
 
 public class MoveablePoint extends Point{
     private float xSpeed;
@@ -47,6 +49,7 @@ public class MoveablePoint extends Point{
     @Override
     public String toString() {
         return "("+getX()+","+getY()+")"+"speed"+ " = " + "(" + getxSpeed()+ ", " + getySpeed()+ ")";
+//            return Arrays.toString(getSpeed());
     }
 
     public MoveablePoint move(float xSpeed, float ySpeed){
@@ -55,6 +58,6 @@ public class MoveablePoint extends Point{
        return this;
     }
 
-    // Chưa hiểu rỏ this....
+    // This trả về một chính nó...
 
 }
